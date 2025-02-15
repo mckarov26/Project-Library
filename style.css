@@ -2,4 +2,174 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
+}
+
+body {
+    background-color: #17153B;
+    color: #FFFFFF;
+}
+
+
+#container {
+    border: none;
+    width: 50rem;
+    height: 40rem;
+    margin: 2rem auto 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    resize: both;
+    display: grid;
+    
+    
+    background-color: #433D8B ;
+
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 9fr;
+
+    grid-template-areas: "info-ctn addBook-ctn" 
+                        "info-ctn display-ctn"
+                        "info-ctn display-ctn"
+}
+#info-ctn {
+    background-color: #433D8B ;
+    text-align: center;
+    flex-direction: column;
+    border-right: 2px solid #C8ACD6;
+    grid-area: info-ctn;
+
+  
+    
+ 
+    
+
+    
+}
+#info-ctn > img {
+    width: 8rem;
+    border-radius: 50%;
+    margin-top: 2rem; 
+    
+}
+#info-ctn > p {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    text-align: center; 
+    background-color: #433D8B ;   
+}
+#info-ctn > p > span {
+    font-weight: bold;
+    background-color: #433D8B ;
+    
+}
+#info-ctn > h1 {
+    text-align: center;
+    width: 8rem;
+    margin: 2rem auto;
+    line-height: 6rem; 
+
+}
+
+#addBook-ctn {
+    border-bottom: 2px solid #C8ACD6;
+    grid-area: addBook-ctn;
+}
+#display-ctn {
+   
+    grid-area: display-ctn;
+}
+
+#open-btn {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: #6A57D7;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+
+}
+
+#open-btn:hover {
+    background-color: hsl(249, 62%, 65%);
+}
+#open-btn:active {
+    background-color: hsl(249, 62%, 70%);
+}
+
+#myDialog {
+    margin: 5rem auto;
+    width: 20rem;
+    height: 35rem;
+    border-radius: 2rem;
+    padding: 5rem;
+
+    overflow: hidden;
+    resize: both;
+    
+   border: 2px solid #;
+    
+}
+#myDialog > form {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   align-items: center;
+
+  
+   
+
+   
+}
+
+#myDialog > form > label {
+    font-weight: bold;
+    color: #433D8B;
+    font-size: 1.2rem;
+}
+
+#myDialog > form > input {
+    width: 15rem;
+    /* text-align: center; */
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color:#433D8B ;
+    border-radius: 1rem;
+    border: 2px solid #433D8B ;
+
+}
+#myDialog > form > input:focus {
+    border: 2px solid #6A57D7;
+    outline: none;
+}
+
+#myDialog > form > #isRead {
+   transform: scale(2);
+   border: 2px solid #433D8B ;
+   outline: none;
+  
+} 
+
+
+
+
+#close-btn {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: #6A57D7;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    width: 9rem;
+
+}
+#close-btn:hover {
+    background-color: hsl(249, 62%, 65%);
+}
+#close-btn:active {
+    background-color: hsl(249, 62%, 70%);
 }
