@@ -219,3 +219,18 @@ body {
 .remove-btn:active {
     background-color: hsl(245, 39%, 60%);
 }
+
+.toggle-read {
+    background-color: #433D8B;
+    color: #FFFFFF;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+.toggle-read:hover {
+    background-color:hsl(245, 39%, 50%) ;
+}
+.toggle-read:active {
+    background-color: hsl(245, 39%, 60%);
+}
